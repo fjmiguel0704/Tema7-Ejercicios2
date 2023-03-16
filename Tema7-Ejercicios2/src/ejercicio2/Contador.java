@@ -31,17 +31,14 @@ public class Contador {
 		this.cont = cont;
 	}
 
-	public int incrementar() {
+	public void incrementar() {
 		cont++;
-		return cont;
 	}
 
-	public int decrementar() {
+	public void decrementar() {
 		cont--;
 		if (cont < 0) {
 			cont = 0;
 		}
-
-		return cont;
 	}
 }
