@@ -39,8 +39,8 @@ public class Hora {
 		this.segundos = segundos;
 	}
 
-	public void incrementaSegundo(int segundosIncre) {
-		segundos+=segundosIncre;
+	public void incrementaSegundo() {
+		segundos++;
 		if (segundos >= 60) {
 			segundos = 0;
 			minutos++;
