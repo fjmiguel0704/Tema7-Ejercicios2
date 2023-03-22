@@ -72,66 +72,88 @@ public class Fecha {
 				estado = true;
 			}
 		}
-		
+
 		case 4: {
 			if (dia > 0 && dia < 31) {
 				estado = true;
 			}
 		}
-		
+
 		case 5: {
 			if (dia > 0 && dia < 32) {
 				estado = true;
 			}
 		}
-		
+
 		case 6: {
 			if (dia > 0 && dia < 31) {
 				estado = true;
 			}
 		}
-		
+
 		case 7: {
 			if (dia > 0 && dia < 32) {
 				estado = true;
 			}
 		}
-		
+
 		case 8: {
 			if (dia > 0 && dia < 32) {
 				estado = true;
 			}
 		}
-		
+
 		case 9: {
 			if (dia > 0 && dia < 31) {
 				estado = true;
 			}
 		}
-		
+
 		case 10: {
 			if (dia > 0 && dia < 32) {
 				estado = true;
 			}
 		}
-		
+
 		case 11: {
 			if (dia > 0 && dia < 31) {
 				estado = true;
 			}
 		}
-		
+
 		case 12: {
 			if (dia > 0 && dia < 32) {
 				estado = true;
 			}
 		}
 		}
-		
+
 		return estado;
 	}
-	
+
 	void diaSiguiente() {
+		dia++;
+		fechaCorrecta();
+	}
+
+	public String toString() {
+		String result = "";
+		if (dia < 10) {
+			result = "0" + dia + "-"  + mes + "-" + año;
+		}
 		
+		if (mes<10) {
+			result =  dia + "-" + "0" + mes + "-" + año;
+		}
+		
+		if (dia < 10 && mes < 10) {
+			result = "0" + dia + "-" + "0" + mes + "-" + año;
+		}
+
+		if (dia>9 && mes>9) {
+			result = dia + "-" + mes + "-" + año;
+		}
+
+		return result;
 	}
 }
