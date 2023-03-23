@@ -39,7 +39,7 @@ public class Fecha {
 		this.año = año;
 	}
 
-	boolean esBisiesto() {
+	private boolean esBisiesto() {
 		boolean bisiesto = false;
 		if (año % 4 == 0) {
 			bisiesto = true;
