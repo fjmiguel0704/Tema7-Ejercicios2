@@ -1,9 +1,9 @@
 package ejercicio1;
 
 public class Hora {
-	int hora;
-	int minutos;
-	int segundos;
+	private int hora;
+	private int minutos;
+	private int segundos;
 
 	public Hora() {
 		// Constructor vacío

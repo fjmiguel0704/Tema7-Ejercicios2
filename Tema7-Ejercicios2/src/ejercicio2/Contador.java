@@ -1,7 +1,7 @@
 package ejercicio2;
 
 public class Contador {
-	int cont;
+	private int cont;
 
 	/**
 	 * Constructor por defecto
