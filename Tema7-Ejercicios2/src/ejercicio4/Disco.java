@@ -1,12 +1,13 @@
 package ejercicio4;
 
 public class Disco {
+
 	private String codigo = "LIBRE";
 	private String autor;
 	private String titulo;
 	private String genero;
 	private int duracion;
-	
+
 	public Disco() {
 
 	}
@@ -18,8 +19,8 @@ public class Disco {
 		this.genero = genero;
 		this.duracion = duracion;
 	}
-	
-	public Disco  (Disco disco) {
+
+	public Disco(Disco disco) {
 		this.codigo = disco.codigo;
 		this.autor = disco.autor;
 		this.titulo = disco.titulo;
@@ -71,8 +72,5 @@ public class Disco {
 		return "Disco [codigo=" + codigo + ", autor=" + autor + ", titulo=" + titulo + ", genero=" + genero
 				+ ", duracion=" + duracion + "]";
 	}
-	
-	
 
-	
 }
