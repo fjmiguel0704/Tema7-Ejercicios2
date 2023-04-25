@@ -101,7 +101,7 @@ public class Fecha {
 	 */
 	private boolean esBisiesto() {
 		boolean bisiesto = false;
-		if (año % 4 == 0) {
+		if ((año % 4 == 0) && ((año % 100 != 0) || (año % 400 == 0))) {
 			bisiesto = true;
 		}
 
