@@ -151,6 +151,7 @@ public class Fecha {
 	 */
 	void diaSiguiente() {
 		dia++;
+		fechaCorrecta();
 
 		switch (mes) {
 		case 1, 3, 5, 7, 8, 10, 12: {
@@ -175,7 +176,7 @@ public class Fecha {
 			break;
 		}
 
-		case 2: 
+		case 2: {
 			if (esBisiesto()) {
 				if (dia == 30) {
 					dia = 1;
@@ -187,7 +188,7 @@ public class Fecha {
 				dia = 1;
 				mes++;
 			}
-		
+		}
 
 		}
 
