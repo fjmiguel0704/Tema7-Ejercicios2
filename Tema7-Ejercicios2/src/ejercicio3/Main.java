@@ -6,7 +6,7 @@ public class Main {
 
 		// Objeto, al que se le pasa como parámetro al constructor un día, un mes y un
 		// año
-		Fecha objeto = new Fecha(31, 12, 2028);
+		Fecha objeto = new Fecha(28, 2, 2028);
 
 		// Llamamos al método que comprueba si la fecha introducida es correcta
 		objeto.fechaCorrecta();
